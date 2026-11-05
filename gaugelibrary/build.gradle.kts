@@ -1,8 +1,7 @@
 plugins {
-    alias(libs.plugins.android.library)
-    alias(libs.plugins.jetbrains.kotlin.android)
+    id(libs.plugins.android.library.get().pluginId)
+    id(libs.plugins.jetbrains.kotlin.android.get().pluginId)
     id("maven-publish")
-
 }
 
 android {
